@@ -1,69 +1,112 @@
-[Infinite Ammo All Weapons]
+
+# Weapon All Ammo Codes
+
+[Infinite Ammo Silenced 9mm]
 Type = Gameshark
 Activation = EndFrame
-;??
-;8012A7EA FFFF
-;??
-;8012A7EE FFFF
-;silence 9mm
 8012A7F2 FFFF
-;9MM AMMO
+
+[Infinite Ammo 9mm]
+Type = Gameshark
+Activation = EndFrame
 8012A7F6 FFFF
-;45
+
+[Infinite Ammo 45]
+Type = Gameshark
+Activation = EndFrame
 8012A7FA FFFF
-;m16 AMM0
+
+[Infinite Ammo M16]
+Type = Gameshark
+Activation = EndFrame
 8012A7FE FFFF
-;silence-hk5-ammo
+
+[Infinite Ammo Silenced HK-5]
+Type = Gameshark
+Activation = EndFrame
 8012A802 FFFF
-;hk5-ammo
+
+[Infinite Ammo HK-5]
+Type = Gameshark
+Activation = EndFrame
 8012A806 FFFF
-;PK102 ammo
+
+[Infinite Ammo PK102]
+Type = Gameshark
+Activation = EndFrame
 8012A80A FFFF
-;shotgun ammo
+
+[Infinite Ammo Shotgun]
+Type = Gameshark
+Activation = EndFrame
 8012A80E FFFF
-;usa12
+
+[Infinite Ammo USA12]
+Type = Gameshark
+Activation = EndFrame
 8012A812 FFFF
-;g18 ammo
+
+[Infinite Ammo G18]
+Type = Gameshark
+Activation = EndFrame
 8012A816 FFFF
-;biz12
+
+[Infinite Ammo BIZ-2]
+Type = Gameshark
+Activation = EndFrame
 8012A81A FFFF
-;k3g4
+
+[Infinite Ammo K3G4]
+Type = Gameshark
+Activation = EndFrame
 8012A81E FFFF
-;??
-;8012A822 FFFF
-;silence sniper
+
+[Infinite Ammo H11]
+Type = Gameshark
+Activation = EndFrame
+8012A822 FFFF
+
+[Infinite Ammo Silenced Sniper Rifle]
+Type = Gameshark
+Activation = EndFrame
 8012A826 FFFF
-;sniper non silence
+
+[Infinite Ammo Sniper Rifle]
+Type = Gameshark
+Activation = EndFrame
 8012A82A FFFF
-;night vision sniper
+
+[Infinite Ammo Nightvision Sniper Rifle]
+Type = Gameshark
+Activation = EndFrame
 8012A82E FFFF
-;crossbow
+
+[Infinite Ammo Crossbow]
+Type = Gameshark
+Activation = EndFrame
 8012A832 FFFF
-;????
-;8012A836 FFFF
-;??
-;8012A83A FFFF
-;??
-;8012A83E FFFF
-;m79 ammo
+
+[Infinite Ammo M79]
+Type = Gameshark
+Activation = EndFrame
 8012A842 FFFF
-;grenades
+
+[Infinite Ammo Grenades]
+Type = Gameshark
+Activation = EndFrame
 8012A846 FFFF
-;GAS grenades
+
+[Infinite Ammo Gas Grenades]
+Type = Gameshark
+Activation = EndFrame
 8012A84A FFFF
-;????
-;8012A84E FFFF
-;??
-;8012A852 FFFF
-;??
-;8012A85A FFFF
-;Tear Gas
+
+[Infinite Ammo C4]
+Type = Gameshark
+Activation = EndFrame
+8012A84E FFFF
+
+[Infinite Ammo Tear-Gas Launcher]
+Type = Gameshark
+Activation = EndFrame
 8012A85E FFFF
-;??
-;8012A862 FFFF
-;??
-;8012A86A FFFF
-;??
-;8012A872 FFFF
-;bricks game
-;8012A87A FFFF
