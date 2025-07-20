@@ -1,6 +1,6 @@
 
 # Weapon All Ammo Codes
-
+```
 [Infinite Ammo Silenced 9mm]
 Type = Gameshark
 Activation = EndFrame
@@ -110,3 +110,4 @@ Activation = EndFrame
 Type = Gameshark
 Activation = EndFrame
 8012A85E FFFF
+```
