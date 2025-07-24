@@ -1,0 +1,16 @@
+; CHTDB: ; [ Syphon Filter 2 (Europe) {SCES-02285 | SCES-12285} ]
+
+[Chance Unlimited Ammo]
+Type = Gameshark
+Activation = EndFrame
+80134bf2 000F
+
+[Chance No Shoot Delay]
+Type = Gameshark
+Activation = EndFrame
+80134bf0 0000
+
+[Chance No Fire Cooldown]
+Type = Gameshark
+Activation = EndFrame
+80134bd4 00000000
