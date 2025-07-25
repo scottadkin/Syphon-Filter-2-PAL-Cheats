@@ -1,0 +1,6 @@
+; CHTDB: ; [ Syphon Filter 2 (Europe) {SCES-02285 | SCES-12285} ]
+
+[Fire Rate Limit Remover]
+Type = Gameshark
+Activation = EndFrame
+8012A7B0 0000
