@@ -1,12 +1,17 @@
 # AI Stuff
 ```
 
-;was 70A then found oput it was a byte not a half word
-;only first index ai danger seems to be stored there
-[AI#1 MAX Danager(-5288 from ammo address)]
+;128 value after player is out of sight or ignoring player
+;0 if engage
+;255 max danger/shooting
+[AI Instant MAX Danger]
 Type = Gameshark
 Activation = EndFrame
 8013370B FF
+801337F7 FF
+801338E3 FF
+801339CF FF
+80133ABB FF
 
 [AI Unlimited Ammo]
 Type = Gameshark
