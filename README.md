@@ -1,5 +1,13 @@
 # AI Stuff
 ```
+
+;was 70A then found oput it was a byte not a half word
+;only first index ai danger seems to be stored there
+[AI#1 MAX Danager(-5288 from ammo address)]
+Type = Gameshark
+Activation = EndFrame
+8013370B FF
+
 [AI Unlimited Ammo]
 Type = Gameshark
 Activation = EndFrame
