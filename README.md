@@ -1,3 +1,8 @@
+# General
+```
+012B260 = Current Mission index (Byte, starts at 0 then increments)
+```
+
 # AI Stuff
 ```
 
