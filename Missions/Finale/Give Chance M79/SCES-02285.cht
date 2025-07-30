@@ -1,0 +1,11 @@
+; CHTDB: ; [ Syphon Filter 2 (Europe) {SCES-02285 | SCES-12285} ]
+
+[Finale Give Chance M79]
+Type = Gameshark
+Activation = EndFrame
+C01B37C8 0C44
+801B3064 15
+00000000 FFFF
+C01B37C8 0668
+801B2FD0 15
+00000000 FFFF

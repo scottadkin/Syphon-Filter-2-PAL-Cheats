@@ -204,3 +204,16 @@ Activation = EndFrame
 01B09FC
 01B0A48
 ```
+
+# Finale
+```
+[Finale Give Chance M79]
+Type = Gameshark
+Activation = EndFrame
+C01B37C8 0C44
+801B3064 15
+00000000 FFFF
+C01B37C8 0668
+801B2FD0 15
+00000000 FFFF
+```
