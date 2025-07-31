@@ -1,6 +1,11 @@
 # General
 ```
 012B260 = Current Mission index (Byte, starts at 0 then increments)
+
+[No Pain Sound Cooldown(Like Syphon Filter 1)]
+Type = Gameshark
+Activation = EndFrame
+90135064 FFFFFFFF
 ```
 
 # AI Stuff

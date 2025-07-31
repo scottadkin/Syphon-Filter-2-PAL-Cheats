@@ -1,0 +1,7 @@
+; CHTDB: ; [ Syphon Filter 2 (Europe) {SCES-02285 | SCES-12285} ]
+
+
+[No Pain Sound Cooldown]
+Type = Gameshark
+Activation = EndFrame
+90135064 FFFFFFFF
