@@ -10,18 +10,16 @@ Activation = EndFrame
 
 # AI Stuff
 ```
-
-;128 value after player is out of sight or ignoring player
-;0 if engage
-;255 max danger/shooting
+;Update 01/08/25 Fixed danger meter glitching on and off
+;may have also made the AI miss less shots than previous method
 [AI Instant MAX Danger]
 Type = Gameshark
 Activation = EndFrame
-8013370B FF
-801337F7 FF
-801338E3 FF
-801339CF FF
-80133ABB FF
+90133704 FFFFFFFF
+901337F0 FFFFFFFF
+901338DC FFFFFFFF
+901339C8 FFFFFFFF
+90133AB4 FFFFFFFF
 
 [AI Unlimited Ammo]
 Type = Gameshark
