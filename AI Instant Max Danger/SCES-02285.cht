@@ -1,7 +1,7 @@
 ; CHTDB: ; [ Syphon Filter 2 (Europe) {SCES-02285 | SCES-12285} ]
 
 
-[AI Instant MAX Danger New Method]
+[AI Instant MAX Danger]
 Type = Gameshark
 Activation = EndFrame
 90133704 FFFFFFFF
