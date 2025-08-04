@@ -8,6 +8,37 @@ Activation = EndFrame
 90135064 FFFFFFFF
 ```
 
+# Weapon Ids
+```
+9MM 01
+Silenced 9MM 02
+45 03
+M-16 04
+Silenced HK-5 05
+HK-5 06
+PK-102 07
+Shotgun 08
+USAS-12 09
+G18 0A
+BIZ-2 0B
+K3G4 0C
+H11 0D
+Silenced Sniper Rifle 0E
+Sniper Rifle 0F(Not used)
+Nightvision Sniper Rifle 10
+Crossbow 11
+Air Taser 12
+Hand Taser 13
+Knife 14
+M-79 15
+Grenades 16
+Gas Grenades 17
+C4 18
+Transponder 19
+?? 1A
+?? 1B
+```
+
 # AI Stuff
 ```
 ;Update 01/08/25 Fixed danger meter glitching on and off
