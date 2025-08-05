@@ -1,6 +1,5 @@
 ; CHTDB: ; [ Syphon Filter 2 (Europe) {SCES-02285 | SCES-12285} ]
 
-;missed 1 AI
 [New York Sewers Give AI M79(1st spawn)]
 Type = Gameshark
 Activation = EndFrame
@@ -18,6 +17,7 @@ C012B260 0013
 801B12E8 15
 801B1250 15
 801B129C 15
+801B1380 15
 801B13CC 15
 801B1334 15
 801B1464 15
