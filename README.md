@@ -1,6 +1,9 @@
 # General
 ```
-012B260 = Current Mission index (Byte, starts at 0 then increments)
+- 012B260 = Current Mission index (Byte, starts at 0 then increments)
+
+First level load or retry check(2 bytes are same on first load and then the same after every following load)
+- 12B26C
 
 [No Pain Sound Cooldown(Like Syphon Filter 1)]
 Type = Gameshark
@@ -252,7 +255,12 @@ C01B37C8 0668
 00000000 FFFF
 ```
 
-# New York Sewer AI Weapon Id Offsets(first set)
+# New York Sewer
+- Player Weapon Id 012A874
+- Mission Index + 12Bytes values(check to update correct set of enemies)
+First Load Bytes: DCA8
+Second+ Load Bytes: D9B8
+AI Weapon Id Offsets(first set):
 ```
 801B434C
 801B4398
