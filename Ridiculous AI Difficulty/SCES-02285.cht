@@ -1,6 +1,6 @@
 ; CHTDB: ; [ Syphon Filter 2 (Europe) {SCES-02285 | SCES-12285} ]
 
-;unlimited ammo, no fire cooldown, remove weapon fire rate limits, instant max Danger
+;unlimited ammo, no fire cooldown, instant max Danger
 [Ridiculous AI Difficulty]
 Type = Gameshark
 Activation = EndFrame
@@ -23,5 +23,10 @@ Activation = EndFrame
 80134bd4 00000000
 80134C14 00000000
 80134C54 00000000
-80134C54 00000000
+80134C94 00000000
+80134BDE 2C
+80134C9E 2C
+80134C1E 2C
+80134C5E 2C
+80134B9E 2C
 
