@@ -13,33 +13,33 @@ Activation = EndFrame
 
 # Weapon Ids
 ```
-9MM 01
-Silenced 9MM 02
-45 03
-M-16 04
-Silenced HK-5 05
-HK-5 06
-PK-102 07
-Shotgun 08
-USAS-12 09
-G18 0A
-BIZ-2 0B
-K3G4 0C
-H11 0D
-Silenced Sniper Rifle 0E
-Sniper Rifle 0F(Not used)
-Nightvision Sniper Rifle 10
-Crossbow 11
-Air Taser 12
-Hand Taser 13
-Knife 14
-M-79 15
-Grenades 16
-Gas Grenades 17
-C4 18
-Transponder 19
-?? 1A
-?? 1B
+- 01 9MM
+- 02 Silenced 9MM
+- 03 45
+- 04 M-16
+- 05 Silenced HK-5
+- 06 HK-5
+- 07 PK-102
+- 08 Shotgun
+- 09 USAS-12
+- 0A G18
+- 0B BIZ-2
+- 0C K3G4
+- 0D H11
+- 0E Silenced Sniper Rifle
+- 0F Sniper Rifle(Not used)
+- 10 Nightvision Sniper Rifle
+- 11 Crossbow
+- 12 Air Taser
+- 13 Hand Taser
+- 14 Knife
+- 15 M-79
+- 16 Grenades
+- 17 Gas Grenades
+- 18 C4
+- 19 Transponder
+- 1A ??
+- 1B ??
 ```
 
 # AI Stuff
@@ -62,8 +62,6 @@ Activation = EndFrame
 80134bf2 000F
 80134C32 000F
 80134C72 000F
-80134C32 000F
-80134C72 000F
 80134CB2 000F
 80134CF2 000F
 
@@ -81,8 +79,6 @@ Type = Gameshark
 Activation = EndFrame
 80134B94 00000000
 80134bd4 00000000
-80134C14 00000000
-80134C54 00000000
 80134C14 00000000
 80134C54 00000000
 80134C94 00000000
@@ -202,100 +198,150 @@ Activation = EndFrame
 8012A85E FFFF
 ```
 
-
-## C130 Wreck Site
+# AI Weapon Offsets
 ```
-//C130 wreck site AI weapon offsets
-//76 bytes apart
-01B0244
-01B0290
-01B02DC
-01B0328
-01B0374
-01B03C0
-01B04A4
-01B040C
-01B053C
-01B0458
-01B04A4
-01B04F0
-01B053C
-01B0588
-01B05D4
-01B0620
-01B066C
-01B06B8
-01B0704
-01B0750
-01B079C
-01B07E8
-01B0834
-01B0880
-01B08CC
-01B0918
-01B0964
-01B09B0
-01B09FC
-01B0A48
-```
-
-# Finale
-```
-[Finale Give Chance M79]
-Type = Gameshark
-Activation = EndFrame
-C01B37C8 0C44
-801B3064 15
-00000000 FFFF
-C01B37C8 0668
-801B2FD0 15
-00000000 FFFF
-```
-
-# New York Sewer
-- Player Weapon Id 012A874
-- Mission Index + 12Bytes values(check to update correct set of enemies)
-First Load Bytes: DCA8
-Second+ Load Bytes: D9B8
-AI Weapon Id Offsets(first set):
-```
-801B434C
-801B4398
-801B43E4
-801B434C
-801B4300
-801B42B4
-801B1C1C
-801B1BD0
-801B1CB4
-801B1C68
-801B12E8
-801B1250
-801B129C
-801B13CC
-801B1334
-801B1464
-801B14B0
-801B1418
-801B14FC
-801B15E0
-801B162C
-801B1678
-801B16C4
-801B17F4
-801B1710
-801B175C
-801B17A8
-801B1840
-801B18D8
-801B1A54
-801B1AA0
-801B1A08
-801B1D98
-801B1DE4
-801B188C
-801B19BC
-801B1970
-801B1D4C
-801B1924
+const AI_WEAPON_OFFSETS = {
+    "Colorado Mountains":{
+        "firstLoad": [
+            "1AD724",
+            "1AD8A0",
+            "1AD8EC",
+            "1AE0F0",
+            "1AE188",
+            "1AE220",
+            "1AE1D4",
+            "1AD984",
+            "1AD640",
+            "1AD68C",
+            "1AD6D8",
+            "1AD770",
+            "1AD7BC",
+            "1AD808",
+            "1AD510",
+            "1AD55C",
+            "1AD5A8",
+            "1AD5F4",
+            "1ADA1C",//h11 before checkpoint
+            "1AD9D0",//h11 before checkpoint
+            "1AE13C",
+            //missing H11 guys after checkpoint
+        ],
+        "retry": [
+            "1AD200",
+            "1AD37C",
+            "1AD3C8",
+            "1ADC18",
+            "1ADCFC",
+            "1ADCB0",
+            "1ADC64",
+            "1ADBCC",
+            "1AD460",
+            "1AD11C",
+            "1AD168",
+            "1AD1B4",
+            "1AD24C",
+            "1AD298",
+            "1AD2E4",
+            "1ACFEC",
+            "1AD038",
+            "1AD084",
+            "1AD0D0",
+            "1AD4F8", //h11 after checkpoint
+            "1AD4AC", //h11 after checkpoint
+            //"1AD4F8",//makes headshot h11 impossible to start
+            //"1AD4AC"//makes headshot h11 impossible to start
+            //find other 2 H11 addresses
+        ]
+    },
+    "New York Sewers": {
+        "firstLoad": [
+            "1B434C",
+            "1B4398",
+            "1B43E4",
+            "1B4300",
+            "1B42B4",
+            "1B1C1C",
+            "1B1BD0",
+            "1B1CB4",
+            "1B1C68",
+            "1B12E8",
+            "1B1250",
+            "1B129C",
+            "1B1380",
+            "1B13CC",
+            "1B1334",
+            "1B1464",
+            "1B14B0",
+            "1B1418",
+            "1B14FC",
+            "1B15E0",
+            "1B162C",
+            "1B1678",
+            "1B16C4",
+            "1B17F4",
+            "1B1710",
+            "1B175C",
+            "1B17A8",
+            "1B1840",
+            "1B18D8",
+            "1B1A54",
+            "1B1AA0",
+            "1B1A08",
+            "1B1D98",
+            "1B1DE4",
+            "1B188C",
+            "1B19BC",
+            "1B1970",
+            "1B1D4C",
+            "1B1924",
+        ],
+        "retry": [ //1 ai with hk5 missed
+            "1B4010",
+            "1B40F4",
+            "1B3FC4",
+            "1B405C",
+            "1B40A8",
+            "1B18E0",
+            "1B192C",
+            "1B19C4",
+            "1B1978",
+            "19AE37",
+            "1B0FAC",
+            "1B0F60",
+            "1B10DC",
+            "1B1044",
+            "1B1090",
+            "1B1128",
+            "1B1174",
+            "1B11C0",
+            "1B1258",
+            "1B120C",
+            "1B12F0",
+            "1B133C",
+            "1B1388",
+            "1B13D4",
+            "1B159C",
+            "1B1420",
+            "1B1504",
+            "1B146C",
+            "1B14B8",
+            "1B1550",
+            "1B15E8",
+            "1B1764",
+            "1B17B0",
+            "1B1718",
+            "1B1AA8",
+            "1B1AF4",
+            "1B16CC",
+            "1B1680",
+            "1B1A5C",
+            "1B1634",
+            "1B0FF8",
+            "1B12A4",
+        ]
+    },"Finale": {
+            "firstLoad": ["1B3064"],
+            "retry": ["1B2FD0"]
+        }
+};
 ```
