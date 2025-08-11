@@ -44,6 +44,41 @@ Activation = EndFrame
 
 # AI Stuff
 ```
+;unlimited ammo, no fire cooldown, instant max Danger
+;If level ticks not FFFFFFFF(paused or not in level)
+;Activate conditional block 50 ticks after load to prevent level 2 softlock
+[Ridiculous AI Difficulty test level ticks]
+Type = Gameshark
+Activation = EndFrame
+A211ED30 FFFFFFFF
+C611ED30 00000032
+90133704 FFFFFFFF
+901337F0 FFFFFFFF
+901338DC FFFFFFFF
+901339C8 FFFFFFFF
+90133AB4 FFFFFFFF
+80134BB2 000F
+80134bf2 000F
+80134C32 000F
+80134C72 000F
+80134CB2 000F
+80134BB0 0000
+80134bf0 0000
+80134C30 0000
+80134C70 0000
+80134CB0 0000
+80134B94 00000000
+80134bd4 00000000
+80134C14 00000000
+80134C54 00000000
+80134C94 00000000
+80134BDE 2C
+80134C9E 2C
+80134C1E 2C
+80134C5E 2C
+80134B9E 2C
+00000000 FFFF
+
 ;Update 01/08/25 Fixed danger meter glitching on and off
 ;may have also made the AI miss less shots than previous method
 [AI Instant MAX Danger]

@@ -1,9 +1,13 @@
 ; CHTDB: ; [ Syphon Filter 2 (Europe) {SCES-02285 | SCES-12285} ]
 
 ;unlimited ammo, no fire cooldown, instant max Danger
-[Ridiculous AI Difficulty]
+;If level ticks not FFFFFFFF(paused or not in level)
+;Activate conditional block 50 ticks after load to prevent level 2 softlock
+[Ridiculous AI Difficulty test level ticks]
 Type = Gameshark
 Activation = EndFrame
+A211ED30 FFFFFFFF
+C611ED30 00000032
 90133704 FFFFFFFF
 901337F0 FFFFFFFF
 901338DC FFFFFFFF
@@ -29,4 +33,4 @@ Activation = EndFrame
 80134C1E 2C
 80134C5E 2C
 80134B9E 2C
-
+00000000 FFFF
