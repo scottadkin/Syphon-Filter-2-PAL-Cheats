@@ -46,8 +46,9 @@ Activation = EndFrame
 ```
 ;unlimited ammo, no fire cooldown, instant max Danger
 ;If level ticks not FFFFFFFF(paused or not in level)
-;Activate conditional block 50 ticks after load to prevent level 2 softlock
-[Ridiculous AI Difficulty test level ticks]
+;Activate conditional block
+;if level index is not level 2(0x01) activate additional block that makes level 2 impossible otherwise
+[Ridiculous AI Difficulty]
 Type = Gameshark
 Activation = EndFrame
 A211ED30 FFFFFFFF
@@ -72,6 +73,9 @@ C611ED30 00000032
 80134C14 00000000
 80134C54 00000000
 80134C94 00000000
+00000000 FFFF
+E112B260 0001
+A211ED30 FFFFFFFF
 80134BDE 2C
 80134C9E 2C
 80134C1E 2C
