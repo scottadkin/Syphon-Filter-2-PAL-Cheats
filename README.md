@@ -83,6 +83,21 @@ A211ED30 FFFFFFFF
 80134B9E 2C
 00000000 FFFF
 
+[Tougher AI]
+Type = Gameshark
+Activation = EndFrame
+Description = Remove AI's Pauses While Shooting + AI Max Danger
+80134BB0 0000
+80134bf0 0000
+80134C30 0000
+80134C70 0000
+80134CB0 0000
+90133704 FFFFFFFF
+901337F0 FFFFFFFF
+901338DC FFFFFFFF
+901339C8 FFFFFFFF
+90133AB4 FFFFFFFF
+
 ;Update 01/08/25 Fixed danger meter glitching on and off
 ;may have also made the AI miss less shots than previous method
 [AI Instant MAX Danger]
