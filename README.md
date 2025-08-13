@@ -44,6 +44,9 @@ Activation = EndFrame
 
 # AI Stuff
 ```
+
+AI Health is +28 Bytes after their weapon Id
+
 ;unlimited ammo, no fire cooldown, instant max Danger
 ;If level ticks not FFFFFFFF(paused or not in level)
 ;Activate conditional block
